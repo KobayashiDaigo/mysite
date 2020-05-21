@@ -1,0 +1,1146 @@
+/*
+Theme Name: Child Nature school
+Theme URL: テーマのサイトのURI
+Description: こどもしぜんじゅくのLPサイト
+Author: Kbayashi Daigo
+Version: 1.0.0
+*/
+
+/* 全体共通 */
+body {
+    margin: 0;
+    /* color: #603813;
+    color: #754C24;
+    color: #FF7497;
+    color: #D40053;
+    color: #E9FFE9;
+    color: #4C9F00;
+    color: #007F20;
+    color: #FFEA2A;
+    color: #F15A24;
+    color: #999999;
+    color: #DAFFBF;
+    color: #C1FFAA;
+    color: #C9FFE1;
+    color: #DFF6FF;
+    color: #DCF8FF;
+    color: #00A7B4;
+    color: #006B9F;
+    color: #FFF2C9; */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+
+p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+
+.free-application {
+    width: 200px;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: #D40053;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 5px 0 0 rgb(94, 0, 36);
+    transition: all.3s;
+}
+.free-application:hover {
+    box-shadow: none;
+    transform: translate3d(0, 5px, 0);
+}
+
+.free-application a {
+    display: block;
+    color: white;
+}
+
+.my-size {
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+/* ローディングアニメーション */
+#loadingWrap {
+    width: 100%;
+    height: 100vh;
+    background: rgb(61, 128, 55);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+        
+#loading {
+    width: 5em;
+    height: 5em;
+    border-top: 1em solid rgba(255, 255, 255, 0.2);
+    border-right: 1em solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1em solid rgba(255, 255, 255, 0.2);
+    border-left: 1em solid rgba(255, 255, 255, 1);
+    animation: loaderAnime 1s infinite linear;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 11;
+}
+        
+@keyframes loaderAnime {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+        
+.loadingNone {
+    animation: loadingAnime 1s forwards;
+}
+        
+@keyframes loadingAnime {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        visibility: collapse;
+    }
+}
+
+
+
+
+
+
+
+/* ヘッダー */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+header .wrap {
+    padding: 10px 80px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 150px;
+    transition: all.5s;
+}
+header .logo:hover {
+    opacity: .8;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+
+
+
+
+/* ハンバーガーメニュー */
+.global-nav {
+    position: fixed;
+    right: -320px; /* これで隠れる */
+    top: 0;
+    width: 300px; /* スマホに収まるくらい */
+    height: 100vh;
+    padding-top: 55px;
+    background-color: rgb(202, 187, 45);
+    transition: all .6s;
+    z-index: 100;
+    overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+}
+
+.hamburger {
+    position: absolute;
+    right: 17.5px;
+    top: 10px;
+    width: 45px; /* クリックしやすいようにちゃんと幅を指定する */
+    height: 43px; /* クリックしやすいようにちゃんと高さを指定する */
+    cursor: pointer;
+    z-index: 200;
+    background-color: white;
+    border: 1px solid #754C24;
+    border-radius: 100%;
+    transition: all .6s;
+}
+
+.hamburger:hover {
+    border-radius: 20%;
+}
+
+.global-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-shadow: 0;
+}
+
+.global-nav__item {
+    text-align: center;
+    transition: .5s;
+}
+
+.global-nav__item a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.global-nav__item:hover {
+    background-color: rgb(214, 204, 115);
+}
+
+.hamburger__line {
+    position: absolute;
+    left: 8.5px;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #754C24;
+    transition: all .6s;
+}
+
+.hamburger__line--1 {
+    top: 11.5px;
+}
+
+.hamburger__line--2 {
+    top: 19.5px;
+}
+
+.hamburger__line--3 {
+    top: 27.5px;
+}
+
+.black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+}
+
+/* クリックした時用のCSS */
+.nav-open .global-nav {
+    right: 0;
+}
+
+.nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+}
+
+.nav-open .hamburger {
+    border-radius: 20%;
+    border: none;
+    background-color: rgb(202, 187, 45);
+}
+
+.nav-open .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 20px;
+}
+
+.nav-open .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+}
+
+.nav-open .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 20px;
+}
+
+
+
+
+
+/* ハンバーガーメニューの中身 */
+.global-nav__list {
+    flex-direction: column;
+}
+
+.global-nav__item {
+    margin-left: 0;
+}
+
+.global-nav__item a {
+    font-size: 18px;
+    line-height: 44px;
+    padding: 0;
+    color: white;
+    border: 0;
+}
+
+.global-nav__item a:hover {
+    color: #742f32;
+}
+
+
+
+
+
+
+
+
+
+/* メイン */
+/* 共通 */
+main .nospace {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+main .tie {
+    height: 110px;
+}
+
+main img {
+    width: 100%;
+}
+
+main .ask {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 64px;
+    text-align: center;
+}
+
+main .color-green {
+    color: #4C9F00;
+}
+
+main .marker-yellow {
+    background: linear-gradient(transparent 60%, #FFEA2A 60%);
+}
+
+main .marker-red {
+    background: linear-gradient(transparent 60%, #D40053 60%);
+
+}
+
+
+
+
+/* 導入部分 */
+main .question {
+    color: white;
+    background-color: #4C9F00;
+}
+
+main .question .wrap {
+    padding: 30px 100px;
+    text-align: center;
+} 
+
+main .question ul {
+    line-height: 60px;
+    border: 5px solid white;
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+main .question .my-yellow {
+    color: #FFEA2A;
+}
+
+/* 違い */
+main .comparison {
+    padding: 30px 100px;
+    background-color: #FFEA2A;
+}
+
+main .comparison table {
+    margin: 50px auto 0;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px;
+}
+
+main .comparison th:nth-of-type(3) {
+    background-color: #999999;
+    color: white;
+    font-weight: normal;
+    border-radius: 30px 30px 0 0;
+}
+
+table th.popular{
+    position: relative;
+}
+table th.popular span.inner{
+    background-color: #4C9F00;
+    color: white;
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    display: block;
+    width: 304px;
+    padding: 20px 0;
+    font-size: 28px;
+    border-radius: 30px 30px 0 0;
+}
+
+main .comparison td {
+    background-color: white;
+    padding: 0 20px;
+    border: 1px solid #FFEA2A;
+}
+main .comparison td:nth-of-type(2) {
+    background-color: #DAFFBF;
+    color: #4C9F00;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/* 特徴 */
+main .feature .wrap{
+    padding: 10px 100px;
+}
+
+main .feature .inner {
+    padding: 30px 50px;
+    border: 5px solid #4C9F00;
+    border-radius: 30px;
+}
+
+main .feature .inner:nth-of-type(2) {
+    margin: 50px 0;
+}
+
+main .feature .inner div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .feature .numbar{
+    width: 150px;
+}
+
+main .feature .initial {
+    font-size: 64px;
+    color: #4C9F00;
+}
+
+
+
+
+
+
+/* 一日のながれ */
+main .day1 {
+    background-color: #DAFFBF;
+}
+main .day2 {
+    background-color: #C1FFAA;
+}
+main .day3 {
+    background-color: #C9FFE1;
+}
+main .day4 {
+    background-color: #DFF6FF;
+}
+
+main .day .wrap {
+    padding:  30px 100px;
+}
+
+main .day .wrap div {
+    text-align: center;
+    font-size: 32px;
+    color: #754C24;
+}
+
+main .time {
+    width: 500px;
+}
+
+
+
+
+
+
+/* 申し込みへ誘うやつ */
+main .reminder {
+    text-align: center;
+    margin: 50px 0;
+}
+
+main .reminder p {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 48px;
+}
+
+main .reminder p:nth-of-type(2) {
+    font-size: 28px;
+    color: #4C9F00;
+}
+
+main .reminder p:nth-of-type(3) {
+    font-size: 32px;
+    color: #D40053;
+}
+
+main .reminder .free-application {
+    margin: 0 auto;
+}
+main .ask .free-application {
+    margin: 0 auto;
+}
+
+
+
+
+
+
+/* 料金 */
+main .price .wrap {
+    padding: 10px 100px;
+}
+
+main .price .plan {
+    display: flex;
+    justify-content: space-between;   
+}
+
+main .price .plan li {
+    width: calc(100% / 2);
+    text-align: center;
+    font-size: 28px;
+    line-height: 56px;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+    cursor: pointer;
+    transition: all.5s;
+}
+
+main .price .plan .flat {
+    border: 5px solid #4C9F00;
+    border-bottom: none;
+    background-color: white;
+    color: #4C9F00;
+}
+main .price .plan .flat:hover{
+    display: block;
+    background-color: #4C9F00;
+    color: white;
+    font-weight: bold;
+}
+main .price .plan .flat .active {
+    display: block;
+    background-color: #4C9F00;
+    color: white;
+    font-weight: bold;
+}
+
+main .price .plan .alacarte {
+    border: 5px solid #00A7B4;
+    border-bottom: none;
+    background-color: white;
+    color: #00A7B4;
+}
+main .price .plan .alacarte:hover {
+    background-color: #00A7B4;
+    color: white;
+    font-weight: bold;
+}
+main .price .plan .alacarte .active {
+    display: block;
+    background-color: #00A7B4;
+    font-weight: bold;
+    color: white;
+}
+
+main .price .plan-content {
+    border-radius: 0 0 30px 0;
+    padding: 50px;
+    display: none;
+}
+
+main .price .show {
+    display: block;
+}
+
+main .price .plan-content:nth-of-type(1) {
+    border: 5px solid #4C9F00;
+}
+main .price .plan-content:nth-of-type(2) {
+    border: 5px solid #00A7B4;
+}
+
+main .price .plan-content div:nth-of-type(1) {
+    font-size: 32px;
+    text-align: center;
+    height: 60px;
+}
+main .price .plan-content div:nth-of-type(2) {
+    font-size: 24px;
+}
+
+main .price .plan-content .color-gray {
+    font-size: 12px;
+    color: gray;
+}
+
+main .price .plan-content ul {
+    font-size: 24px;
+    color: #F15A24;
+}
+
+
+
+
+
+
+
+/* メディア */
+main #media {
+    padding: 30px 100px;
+}
+
+.iframe {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* おかげさまで */
+main .thank {
+    text-align: center;
+    margin: 50px 0;
+}
+
+main .thank p {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+main .thank p:nth-of-type(2) {
+    font-size: 28px;
+    line-height: 56px;
+}
+
+main .thank p:nth-of-type(3) {
+    font-size: 70px;
+    line-height: 100px;
+    color: #D40053;
+}
+
+
+
+
+
+
+/* ご利用者様の声 */
+main #voice {
+    background-color: #4C9F00;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+main #voice .wrap {
+    padding: 30px 100px;
+}
+
+main #voice .inner {
+    border: 5px solid #FFEA2A;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+main #voice .inner:nth-of-type(2) {
+    margin-top: 50px;
+}
+
+main #voice  img {
+    width: 300px;
+}
+
+main #voice .inner p {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+main #voice .inner p:nth-of-type(4) {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* スタッフ */
+main #staff .wrap {
+    padding: 30px 100px;
+}
+
+main #staff .wrap div:nth-of-type(1) {
+    font-size: 32px;
+    font-weight: bold;
+    color: #754C24;
+    text-align: center;
+}
+
+main #staff .inner {
+    border-radius: 30px;
+    padding: 30px;
+}
+
+main #staff .inner-green {
+    border: 5px solid #4C9F00;
+}
+main #staff .inner-blue {
+    border: 5px solid #00A7B4;
+    margin-top: 50px;
+}
+
+main #staff .inner-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main #staff .inner-text ul {
+    color: black;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+}
+
+
+main #staff .inner img {
+    width: 300px;
+}
+
+
+
+
+
+
+/* インスタ */
+.insta_btn {
+    display: inline-block;
+    text-align: center;/*中央揃え*/
+    color: #2e6ca5;/*文字色*/
+    font-size: 20px;/*文字サイズ*/
+    text-decoration: none;/*下線消す*/
+  }
+  
+  .insta_btn:hover {/*ホバー時*/
+    color:#668ad8;/*文字色*/
+    transition: .5s;/*ゆっくり変化*/
+  }
+  
+  .insta_btn .insta{/*アイコンの背景*/
+    position: relative;/*相対配置*/
+    display: inline-block;
+    width: 38px;/*幅*/
+    height: 38px;/*高さ*/
+    background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+    background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+    overflow: hidden;/*はみ出た部分を隠す*/
+    border-radius: 5px;/*角丸に*/
+  
+  }
+  
+  .insta_btn .insta:before{/*グラデーションを重ねるため*/
+    content: '';
+    position: absolute;/*絶対配置*/
+    top: 18px;/*ずらす*/
+    left: -10px;/*ずらす*/
+    width: 40px;/*グラデーションカバーの幅*/
+    height: 40px;/*グラデーションカバーの高さ*/
+    background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+    background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+  }
+  
+  .insta_btn .fa-instagram {/*アイコン*/
+    color: #FFF;/*白に*/
+    position: relative;/*z-indexを使うため*/
+    z-index: 2;/*グラデーションより前に*/
+    font-size: 35px;/*アイコンサイズ*/
+    line-height: 38px;/*高さと合わせる*/
+  }
+
+/* ツイッター */
+  .twitter_btn .twitter{/*アイコンの背景*/
+    position: relative;/*相対配置*/
+    display: inline-block;
+    width: 38px;/*幅*/
+    height: 38px;/*高さ*/
+    background-color: #55acee;
+    overflow: hidden;/*はみ出た部分を隠す*/
+    border-radius: 5px;/*角丸に*/
+  
+  }
+  
+  .twitter_btn .fa-twitter {/*アイコン*/
+    color: #FFF;/*白に*/
+    position: relative;/*z-indexを使うため*/
+    z-index: 2;/*グラデーションより前に*/
+    font-size: 30px;/*アイコンサイズ*/
+    line-height: 38px;/*高さと合わせる*/
+  }
+
+/* フェイスブック */
+  .facebook_btn .facebook{/*アイコンの背景*/
+    position: relative;/*相対配置*/
+    display: inline-block;
+    width: 38px;/*幅*/
+    height: 38px;/*高さ*/
+    background-color: #315096;
+    overflow: hidden;/*はみ出た部分を隠す*/
+    border-radius: 5px;/*角丸に*/
+  
+  }
+  
+  .facebook_btn .fa-facebook-f {/*アイコン*/
+    color: #FFF;/*白に*/
+    position: relative;/*z-indexを使うため*/
+    z-index: 2;/*グラデーションより前に*/
+    font-size: 30px;/*アイコンサイズ*/
+    line-height: 38px;/*高さと合わせる*/
+  }
+
+
+
+
+
+
+
+  /* よくあるご質問 */
+main #question {
+    background-color: #FFF2C9;
+}
+
+main #question .wrap {
+    padding: 30px 100px;
+}
+
+main #question .wrap div {
+    text-align: center;
+    font-size: 32px;
+}
+
+main #question ul + ul {
+    margin-top: 30px;
+}
+
+main #question li {
+    font-size: 20px;
+    line-height: 48px;
+    color: black;
+}
+
+main #question li:nth-of-type(odd) {
+    background-color: #E9FFE9;
+    border-radius: 5px 5px 0 0;
+}
+main #question li:nth-of-type(even) {
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    border: 3px solid #E9FFE9;
+}
+
+
+main #question .question {
+    cursor: pointer;
+}
+
+main #question .answer {
+    display: none;
+    background: white;
+}
+
+main #question .question-initial {
+    padding: 3px 13px;
+    margin: 0 10px;
+    background-color: #4C9F00;
+    color: white;
+    border-radius: 100%;
+}
+main #question .answer-initial {
+    padding: 3px 13px;
+    margin: 0 10px;
+    background-color: #FF7497;
+    color: white;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* お問い合わせ */
+footer form .wrap {
+    padding: 30px 100px;
+}
+
+footer form .inner {
+    border: 5px solid #4C9F00;
+    border-radius: 0 0 30px 30px;
+    padding: 30px;
+}
+
+footer form .ttl {
+    font-size: 32px;
+    line-height: 70px;
+    text-align: center;
+    background-color: #4C9F00;
+    color: white;
+    border: 5px solid #4C9F00;
+    border-radius: 30px 30px 0 0;
+}
+
+footer form .inner .required {
+    background-color: #D40053;
+    color: white;
+    font-size: 12px;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+footer form .inner td {
+    width: calc(100% / 2);
+    font-size: 20px;
+    line-height: 40px;
+}
+
+footer form .inner .wpcf7-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+footer form .inner .wpcf7-text {
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+footer form .inner .wpcf7-textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+
+}
+
+footer form .submit {
+    text-align: center;
+}
+
+footer form .wpcf7-submit {
+    background-color: #D40053;
+    color: white;
+    font-size: 24px;
+    line-height: 48px;
+    box-shadow: 0 5px 0 0 rgb(94, 0, 36);
+    padding: 0 50px;
+    margin: 30px 0 50px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all.3s;
+}
+footer form .wpcf7-submit:hover {
+    box-shadow: none;
+    transform: translate3d(0, 5px, 0);
+}
+
+footer form .tel {
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #4C9F00;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* お知らせ一覧 */
+footer .article .wrap {
+    padding: 30px 100px;
+}
+
+footer .article p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #603813;
+}
+
+footer .article a {
+    color: #603813;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+footer .article-text {
+    transition: all.3s;
+}
+footer .article-text:hover {
+    opacity: .7;
+}
+
+
+
+
+/* アクセス */
+footer #access {
+    margin: 0 auto;
+}
+
+footer #access .wrap {
+    padding: 30px 100px;
+}
+
+footer #access .wrap p {
+    color: #603813;
+    font-size: 24px;
+    font-weight: bold;
+}
+footer #access .wrap p:nth-of-type(2) {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+}
+footer #access .wrap p:nth-of-type(3) {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+}
+footer #access .wrap p:nth-of-type(4) {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
+}
+
+
+
+
+footer .recruit {
+    width: 70%;
+    margin: 0 auto;
+    transition: all.3s;
+}
+
+footer .recruit:hover {
+    opacity: .5;
+}
+
+footer img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* フッター */
+footer .footer {
+    text-align: center;
+}
+
+footer .nospace {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+footer .footer a {
+    color: black;
+    text-decoration: underline;
+}
+footer .footer a:hover {
+    text-decoration: none;
+}
+
+footer .footer div:nth-of-type(1){
+    background-color: #DFF6FF;
+}
+footer .footer .inc{
+    font-size: 12px;
+    background-color: #006B9F;
+    color: white;
+}
