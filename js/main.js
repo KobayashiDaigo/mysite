@@ -44,6 +44,27 @@ jQuery(function() {
   });
 });
 
+// タブメニュー
+jQuery(function() {
+ 
+  // ①タブをクリックしたら発動
+  jQuery('.recruit-ttl li').click(function() {
+ 
+    // ②クリックされたタブの順番を変数に格納
+    var index = jQuery('.recruit-ttl li').index(this);
+ 
+    // ③クリック済みタブのデザインを設定したcssのクラスを一旦削除
+    jQuery('.recruit-ttl li').removeClass('active');
+ 
+    // ④クリックされたタブにクリック済みデザインを適用する
+    jQuery(this).addClass('active');
+ 
+    // ⑤コンテンツを一旦非表示にし、クリックされた順番のコンテンツのみを表示
+    jQuery('.recruit-content').removeClass('show').eq(index).addClass('show');
+ 
+  });
+});
+
 // Q&A
 jQuery(document).ready(function(){
   　jQuery(".question").on("click", function() {
@@ -65,3 +86,62 @@ jQuery(function(){
   })
 });
   
+// スクロールしたら下からふわっと
+jQuery(function(){
+  jQuery(window).scroll(function (){
+    jQuery('.fadein').each(function(){
+          var targetElement = jQuery(this).offset().top;
+          var scroll = jQuery(window).scrollTop();
+          var windowHeight = jQuery(window).height();
+          if (scroll > targetElement - windowHeight + 200){
+              jQuery(this).css('opacity','1');
+              jQuery(this).css('transform','translateY(0)');
+          }
+      });
+  });
+});
+
+// スクロールしたら右からふわっと
+jQuery(function(){
+  jQuery(window).scroll(function (){
+    jQuery('.fadein-r').each(function(){
+          var targetElement = jQuery(this).offset().top;
+          var scroll = jQuery(window).scrollTop();
+          var windowHeight = jQuery(window).height();
+          if (scroll > targetElement - windowHeight + 200){
+              jQuery(this).css('opacity','1');
+              jQuery(this).css('transform','translateX(0)');
+          }
+      });
+  });
+});
+
+// スクロールしたら左からふわっと
+jQuery(function(){
+  jQuery(window).scroll(function (){
+    jQuery('.fadein-l').each(function(){
+          var targetElement = jQuery(this).offset().top;
+          var scroll = jQuery(window).scrollTop();
+          var windowHeight = jQuery(window).height();
+          if (scroll > targetElement - windowHeight + 200){
+              jQuery(this).css('opacity','1');
+              jQuery(this).css('transform','translateX(0)');
+          }
+      });
+  });
+});
+
+// スクロールしたらぶわっと
+jQuery(function(){
+  jQuery(window).scroll(function (){
+    jQuery('.fadeup').each(function(){
+          var targetElement = jQuery(this).offset().top;
+          var scroll = jQuery(window).scrollTop();
+          var windowHeight = jQuery(window).height();
+          if (scroll > targetElement - windowHeight + 200){
+              jQuery(this).css('opacity','1');
+              jQuery(this).css('transform','scale(1.0)');
+          }
+      });
+  });
+});
