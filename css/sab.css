@@ -1,0 +1,1461 @@
+/* タブレットサイズ */
+@media screen and (max-width: 959px) {
+/* 全体共通 */
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.free-application {
+    width: 150px;
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 30px;
+    box-shadow: 0 5px 0 0 rgb(94, 0, 36);
+}
+
+
+
+
+
+
+
+/* ヘッダー */
+header .wrap {
+    padding: 10px 80px 10px 10px;
+}
+
+header .logo {
+    width: 80px;
+}
+header .logo:hover {
+    opacity: .8;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+/* メイン */
+/* 共通 */
+main .tie {
+    height: 68px;
+}
+
+main .ask {
+    font-size: 28px;
+    line-height: 56px;
+}
+
+
+
+
+
+
+
+/* 導入部分 */
+main .question .wrap {
+    padding: 30px 50px;
+} 
+
+main .question ul {
+    line-height: 52px;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+/* 違い */
+main .comparison {
+    padding: 30px 30px;
+}
+
+main .comparison table {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+main .comparison th:nth-of-type(3) {
+    border-radius: 20px 20px 0 0;
+}
+
+table th.popular span.inner{
+    left: 1px;
+    bottom: 0;
+    display: block;
+    width: 196px;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+main .comparison td {
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+/* 特徴 */
+main .feature .wrap{
+    padding: 10px 50px;
+}
+
+main .feature .inner {
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+
+main .feature .numbar{
+    width: 120px;
+}
+
+main .feature .initial {
+    font-size: 60px;
+}
+
+
+
+
+
+
+/* 一日のながれ */
+main .day .wrap {
+    padding:  30px 50px;
+}
+
+main .day .wrap div {
+    font-size: 28px;
+}
+
+main .time {
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+/* 料金 */
+main .price .wrap {
+    padding: 10px 50px;
+}
+
+main .price .plan li {
+    font-size: 24px;
+    line-height: 48px;
+    border-radius: 10px 10px 0 0;
+}
+
+main .price .plan-content {
+    border-radius: 0 0 20px 0;
+    padding: 30px;
+}
+main .price .plan-content div:nth-of-type(1) {
+    font-size: 28px;
+    height: 80px;
+}
+main .price .plan-content div:nth-of-type(2) {
+    font-size: 20px;
+}
+
+main .price .plan-content .color-gray {
+    font-size: 10px;
+}
+
+main .price .plan-content ul {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* メディア */
+main #media {
+    padding: 30px 50px;
+}
+
+
+
+
+
+
+
+
+/* おかげさまで */
+main .thank p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+main .thank p:nth-of-type(2) {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+main .thank p:nth-of-type(3) {
+    font-size: 66px;
+}
+
+
+
+
+
+
+/* ご利用者様の声 */
+main #voice {
+    font-size: 28px;
+}
+
+main #voice .wrap {
+    padding: 30px 50px;
+}
+
+main #voice .inner {
+    border-radius: 20px;
+    padding: 20px;
+}
+
+main #voice  img {
+    width: 200px;
+}
+
+main #voice .inner p {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+main #voice .inner p:nth-of-type(4) {
+    font-size: 16x;
+    line-height: 32px;
+}
+
+
+
+
+
+
+
+
+/* スタッフ */
+main #staff .wrap {
+    padding: 30px 50px;
+}
+
+main #staff .wrap div:nth-of-type(1) {
+    font-size: 28px;
+}
+
+main #staff .inner {
+    border-radius: 20px;
+    padding: 30px;
+}
+
+main #staff .inner-text ul {
+    color: black;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+main #staff .inner img {
+    width: 40%;
+}
+
+
+
+
+
+
+/* インスタ */  
+  .insta_btn .insta{/*アイコンの背景*/
+    width: 30px;/*幅*/
+    height: 30px;/*高さ*/
+  }
+  
+  .insta_btn .insta:before{/*グラデーションを重ねるため*/
+    top: 18px;/*ずらす*/
+    left: -10px;/*ずらす*/
+    width: 40px;/*グラデーションカバーの幅*/
+    height: 40px;/*グラデーションカバーの高さ*/
+  }
+  
+  .insta_btn .fa-instagram {/*アイコン*/
+    font-size: 28px;/*アイコンサイズ*/
+    line-height: 30px;/*高さと合わせる*/
+  }
+
+/* ツイッター */
+  .twitter_btn .twitter{/*アイコンの背景*/
+    width: 30px;/*幅*/
+    height: 30px;/*高さ*/
+  }
+  
+  .twitter_btn .fa-twitter {/*アイコン*/
+    font-size: 28px;/*アイコンサイズ*/
+    line-height: 30px;/*高さと合わせる*/
+  }
+
+/* フェイスブック */
+  .facebook_btn .facebook{/*アイコンの背景*/
+    width: 30px;/*幅*/
+    height: 30px;/*高さ*/
+  }
+  
+  .facebook_btn .fa-facebook-f {/*アイコン*/
+    font-size: 28px;/*アイコンサイズ*/
+    line-height: 30px;/*高さと合わせる*/
+  }
+
+
+
+
+
+
+
+  /* よくあるご質問 */
+main #question .wrap {
+    padding: 30px 50px;
+}
+
+main #question .wrap div {
+    font-size: 28px;
+}
+
+main #question li {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+main #question .question-initial {
+    padding: 1px 10px;
+}
+main #question .answer-initial {
+    padding: 1px 10px;
+}
+
+
+
+
+
+
+
+/* お知らせ一覧 */
+.article .wrap {
+    padding: 30px 50px;
+}
+
+.article p{
+    font-size: 20px;
+}
+
+.article a {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.article .more {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+/* お問い合わせ */
+footer form .wrap {
+    padding: 30px 50px;
+}
+
+footer form .inner {
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+
+}
+
+footer form .ttl {
+    font-size: 28px;
+    line-height: 64px;
+    border-radius: 20px 20px 0 0;
+}
+
+footer form .inner .required {
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+footer form .inner td {
+    width: 40%;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+footer form .inner .wpcf7-text {
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+}
+
+footer form .inner .wpcf7-textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px;
+
+}
+
+footer form .wpcf7-submit {
+    font-size: 20px;
+    line-height: 40px;
+    box-shadow: 0 5px 0 0 rgb(94, 0, 36);
+    padding: 0 30px;
+    margin: 30px 0 50px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all.3s;
+}
+
+
+
+
+
+
+
+/* アクセス */
+footer #access .wrap {
+    padding: 30px 50px;
+}
+
+footer #access .wrap p {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+/* rictuitPage */
+#recruit .wrap {
+    padding: 30px 50px;
+}
+
+#recruit .ttl p:nth-of-type(1) {
+    font-size: 20px;
+}
+#recruit .ttl p:nth-of-type(2) {
+    font-size: 20px;
+}
+#recruit .ttl p:nth-of-type(3) {
+    font-size: 16px;
+}
+#recruit .ttl p:nth-of-type(4) {
+    font-size: 16px;
+}
+#recruit .ttl p:nth-of-type(5) {
+    font-size: 16px;
+}
+
+#recruit .recruit .wrap {
+    padding: 30px 100px;
+}
+
+#recruit .recruit-ttl li {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+#recruit .recruit-content {
+    font-size: 14px;
+    line-height: 32px;
+    display: none;
+    padding: 15px;
+    border: 3px solid rgb(197, 197, 197);
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+#recruit .show {
+    display: block;
+}
+
+
+/* 記事関係ページ共通 */
+#single figure {
+    width: 200px;
+    margin: 0 auto;
+}
+#archive figure {
+    width: 200px;
+    margin: 0 auto;
+}
+#news figure {
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+#single .wrap {
+    padding: 15px 30px;
+}
+#archive .wrap {
+    padding: 15px 30px;
+}
+#news .news-wrap {
+    padding: 15px 30px;
+}
+
+
+#single .single-outer {
+    width: 70%;
+}
+#archive .archive-outer {
+    width: 70%;
+}
+#news .news-outer {
+    width: 60%;
+}
+
+
+#single .sidebar {
+    width: 25%;
+}
+#archhive .sidebar {
+    width: 25%;
+}
+#news .sidebar {
+    width: 25%;
+}
+
+
+/* single-page */
+#single .single-outer .catalog a{
+    font-size: 14px;
+    line-height: 40px;
+    padding: 5px 15px;
+}
+
+#single .single-inner {
+    padding: 20px;
+}
+
+#single .single-inner a {
+    font-size: 10px;
+    padding: 5px 15px;
+}
+
+/* news-page */
+#news .news-inner a {
+    font-size: 20px;
+}
+#news .news-inner div a {
+    font-size: 14px;
+}
+#news .news-inner div a:nth-of-type(2) {
+    font-size: 10px;
+    padding: 5px 15px;
+}
+
+/* archive-page */
+#archive .archive-outer div:nth-of-type(1){
+    font-size: 28px;
+}
+#archive .archive-inner {
+    border: 5px solid #FFEA2A;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#archive .archive-inner a {
+    font-size: 16px;
+    color: black;
+}
+
+#archive .archive-inner .archive-ttl a:nth-of-type(1){
+    font-size: 24px;
+    color: #603813;
+}
+#archive .archive-inner .archive-ttl a:nth-of-type(2){
+    font-size: 12px;
+    color: gray;
+}
+
+
+#news .news-numbar {
+    text-align: center;
+    line-height: 50px;
+}
+
+.page-numbers {
+    color: #FF7497;
+    border: 1px solid #FF7497;
+    padding: 0 8px;
+    border-radius: 100%;
+    transition: all.3s;
+}
+
+.page-numbers:hover {
+    background-color: #FF7497;
+    color: white;
+
+}
+
+.current {
+    background-color: #FF7497;
+    color: white;
+    padding: 0 8px;
+    border-radius: 100%;
+}
+
+.prev {
+    border: 0;
+}
+.next {
+    border: 0;
+}
+
+.sidebar .widgettitle {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.sidebar a {
+    color: black;
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+    background-color: whitesmoke;
+    border-bottom: 3px solid white;
+    transition: all.3s;
+}
+
+#archives-dropdown-4 {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+
+
+
+
+}
+
+/* スマホサイズ */
+@media screen and (max-width: 559px) {
+    /* 全体共通 */
+h1 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.free-application {
+    width: 150px;
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 30px;
+    box-shadow: 0 5px 0 0 rgb(94, 0, 36);
+}
+
+
+
+
+
+
+
+
+/* ヘッダー */
+header .wrap {
+    padding: 10px;
+}
+
+header .logo {
+    width: 50px;
+}
+header .logo img {
+    width: 80px;
+}
+
+header .free-application {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* メイン */
+/* 共通 */
+main .tie {
+    height: 37px;
+}
+
+main .ask {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+
+
+
+
+
+/* 導入部分 */
+main .question .wrap {
+    padding: 20px 20px;
+} 
+
+main .question ul {
+    line-height: 28px;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+
+
+
+
+/* 違い */
+main .comparison {
+    padding: 10px;
+}
+
+main .comparison table {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+main .comparison th:nth-of-type(3) {
+    border-radius: 20px 20px 0 0;
+}
+
+table th.popular span.inner{
+    left: 1px;
+    bottom: 0;
+    display: block;
+    width: 122px;
+    padding: 10px 0;
+    font-size: 12px;
+    border-radius: 10px 10px 0 0;
+}
+
+main .comparison td {
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+/* 特徴 */
+main .feature .wrap{
+    padding: 10px 20px;
+}
+
+main .feature .inner {
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+main .feature .numbar{
+    width: 80px;
+}
+
+main .feature .initial {
+    font-size: 50px;
+}
+
+
+
+
+
+
+/* 一日のながれ */
+main .day .wrap {
+    padding:  10px 20px;
+}
+
+main .day .wrap div {
+    font-size: 20px;
+}
+
+main .time {
+    width: 200px;
+}
+
+
+
+
+
+/* 申し込みへ誘うやつ */
+main .reminder {
+    margin: 30px 0;
+}
+
+main .reminder p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+main .reminder p:nth-of-type(2) {
+    font-size: 20px;
+}
+
+main .reminder p:nth-of-type(3) {
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+/* 料金 */
+main .price .wrap {
+    padding: 10px 20px;
+}
+
+main .price .plan li {
+    font-size: 16px;
+    line-height: 36px;
+    border-radius: 10px 10px 0 0;
+}
+
+main .price .plan-content {
+    border-radius: 0 0 20px 0;
+    padding: 10px;
+}
+main .price .plan-content div:nth-of-type(1) {
+    font-size: 20px;
+    height: 60px;
+}
+main .price .plan-content div:nth-of-type(2) {
+    font-size: 14px;
+}
+
+main .price .plan-content .color-gray {
+    font-size: 8px;
+}
+
+main .price .plan-content ul {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+/* メディア */
+main #media {
+    padding: 30px 20px;
+}
+
+
+
+
+
+
+
+
+/* おかげさまで */
+main .thank p {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+main .thank p:nth-of-type(2) {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+main .thank p:nth-of-type(3) {
+    font-size: 38px;
+}
+
+
+
+
+
+
+/* ご利用者様の声 */
+main #voice {
+    font-size: 16px;
+}
+
+main #voice .wrap {
+    padding: 30px 20px;
+}
+
+main #voice .inner {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main #voice  img {
+    width: 200px;
+}
+
+main #voice .inner p {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+main #voice .inner p:nth-of-type(4) {
+    font-size: 12x;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+/* スタッフ */
+main #staff .wrap {
+    padding: 30px 20px;
+}
+
+main #staff .wrap div:nth-of-type(1) {
+    font-size: 24px;
+}
+
+main #staff .inner {
+    border-radius: 20px;
+    padding: 10px;
+}
+
+main #staff .inner-text ul {
+    color: black;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+main #staff .inner-text {
+    display: flex;
+    flex-direction: column;
+}
+
+main #staff .inner img {
+    width: 80%;
+}
+
+
+
+
+
+
+/* インスタ */  
+.insta_btn {
+    font-size: 14px;/*文字サイズ*/
+  }
+
+  .insta_btn .insta{/*アイコンの背景*/
+    width: 22px;/*幅*/
+    height: 22px;/*高さ*/
+  }
+  
+  .insta_btn .insta:before{/*グラデーションを重ねるため*/
+    top: 18px;/*ずらす*/
+    left: -10px;/*ずらす*/
+    width: 20px;/*グラデーションカバーの幅*/
+    height: 20px;/*グラデーションカバーの高さ*/
+  }
+  
+  .insta_btn .fa-instagram {/*アイコン*/
+    font-size: 19px;/*アイコンサイズ*/
+    line-height: 22px;/*高さと合わせる*/
+  }
+
+/* ツイッター */
+  .twitter_btn .twitter{/*アイコンの背景*/
+    width: 22px;/*幅*/
+    height: 22px;/*高さ*/
+  }
+  
+  .twitter_btn .fa-twitter {/*アイコン*/
+    font-size: 19px;/*アイコンサイズ*/
+    line-height: 22px;/*高さと合わせる*/
+  }
+
+/* フェイスブック */
+  .facebook_btn .facebook{/*アイコンの背景*/
+    width: 22px;/*幅*/
+    height: 22px;/*高さ*/
+  }
+  
+  .facebook_btn .fa-facebook-f {/*アイコン*/
+    font-size: 19px;/*アイコンサイズ*/
+    line-height: 22px;/*高さと合わせる*/
+  }
+
+
+
+
+
+
+
+  /* よくあるご質問 */
+main #question .wrap {
+    padding: 30px 20px;
+}
+
+main #question .wrap div {
+    font-size: 20px;
+}
+
+main #question ul + ul {
+    margin-top: 10px;
+}
+
+main #question li {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+main #question .question-initial {
+    padding: 1px 10px;
+}
+main #question .answer-initial {
+    padding: 1px 10px;
+}
+
+main #question .question-initial {
+    padding: 1px 5px;
+    margin: 0 10px;
+    background-color: #4C9F00;
+    color: white;
+    border-radius: 100%;
+}
+main #question .answer-initial {
+    padding: 1px 5px;
+    margin: 0 5px;
+    background-color: #FF7497;
+    color: white;
+    border-radius: 100%;
+}
+
+
+
+
+
+
+/* お知らせ一覧 */
+.article .wrap {
+    padding: 30px 20px;
+}
+
+.article p{
+    font-size: 12px;
+}
+
+.article a {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.article .more {
+    font-size: 8px;
+}
+
+
+
+
+
+
+
+
+
+/* お問い合わせ */
+footer form .wrap {
+    padding: 30px 20px;
+}
+
+footer form .inner {
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+}
+
+footer form .ttl {
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 20px 20px 0 0;
+}
+
+footer form .inner .required {
+    font-size: 8px;
+    padding: 0 5px;
+}
+
+footer form .inner tr {
+    display: flex;
+    flex-direction: column;
+}
+
+footer form .inner td {
+    width: 100%;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+footer form .inner .wpcf7-text {
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    font-size: 10px;
+    line-height: 16px;
+    padding-left: 10px;
+}
+
+footer form .inner .wpcf7-textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(185, 185, 185);
+    font-size: 10px;
+    line-height: 16px;
+    padding-left: 10px;
+
+}
+
+footer form .wpcf7-submit {
+    font-size: 16px;
+    line-height: 32px;
+    box-shadow: 0 5px 0 0 rgb(94, 0, 36);
+    padding: 0 20px;
+    margin: 30px 0 50px;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all.3s;
+}
+
+footer form .tel {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+
+
+
+
+/* アクセス */
+footer #access .wrap {
+    padding: 30px 20px;
+}
+
+footer #access .wrap p {
+    font-size: 18px;
+}
+footer #access .wrap p:nth-of-type(2) {
+    font-size: 12px;
+    line-height: 12px;
+}
+footer #access .wrap p:nth-of-type(3) {
+    font-size: 12px;
+    line-height: 12px;
+}
+footer #access .wrap p:nth-of-type(4) {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+footer .recruit {
+    width: 80%;
+}
+
+footer .footer a {
+    font-size: 12px;
+}
+
+footer .footer .inc{
+    font-size: 8px;
+}
+
+
+
+/* rictuitPage */
+#recruit .wrap {
+    padding: 30px 10px;
+}
+
+#recruit .ttl p:nth-of-type(1) {
+    font-size: 16px;
+}
+#recruit .ttl p:nth-of-type(2) {
+    font-size: 16px;
+}
+#recruit .ttl p:nth-of-type(3) {
+    font-size: 10px;
+}
+#recruit .ttl p:nth-of-type(4) {
+    font-size: 10px;
+}
+#recruit .ttl p:nth-of-type(5) {
+    font-size: 10px;
+}
+
+#recruit .recruit .wrap {
+    padding: 30px 20px;
+}
+
+#recruit .recruit-ttl li {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+#recruit .recruit-content {
+    font-size: 10px;
+    line-height: 20px;
+    display: none;
+    padding: 10px;
+    border: 3px solid rgb(197, 197, 197);
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+#recruit .show {
+    display: block;
+}
+
+#recruit .recruit-content tr td:nth-child(odd) {
+    width: 60px;
+}
+
+
+
+/* 記事関係ページ共通 */
+#single figure {
+    width: 200px;
+    margin: 0 auto;
+}
+#archive figure {
+    width: 200px;
+    margin: 0 auto;
+}
+#news figure {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#single .wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+}
+#archive .wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+}
+#news .wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+}
+
+
+#single .single-outer {
+    width: 100%;
+}
+#archive .archive-outer {
+    width: 100%;
+}
+#news .news-outer {
+    width: 100%;
+}
+
+
+#single .sidebar {
+    width: 120px;
+    display: block;
+    margin: 30px auto 0;
+}
+#archive .sidebar {
+    width: 120px;
+    display: block;
+    margin: 30px auto 0;
+}
+#news .sidebar {
+    width: 120px;
+    margin: 0;
+    display: block;
+    margin: 30px auto 0;
+}
+
+
+/* single-page */
+#single .single-outer .catalog a{
+    font-size: 14px;
+    line-height: 40px;
+    padding: 5px 15px;
+}
+
+#single .single-inner {
+    padding: 10px;
+}
+
+#single .single-inner a {
+    font-size: 8px;
+    padding: 3px 10px;
+}
+
+#single .single-outer .catalog a{
+    background-color: #FF7497;
+    color: white;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+
+/* news-page */
+#news .news-inner {
+    padding: 10px;
+    border: 3px solid #FFEA2A;
+}
+
+#news .news-inner a {
+    font-size: 14px;
+}
+#news .news-inner div a {
+    font-size: 10px;
+}
+#news .news-inner div a:nth-of-type(2) {
+    font-size: 8px;
+    padding: 5px 15px;
+}
+
+/* archive-page */
+#archive .archive-outer div:nth-of-type(1){
+    font-size: 20px;
+}
+#archive .archive-inner {
+    border: 5px solid #FFEA2A;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#archive .archive-inner a {
+    font-size: 14px;
+    color: black;
+}
+
+#archive .archive-inner .archive-ttl a:nth-of-type(1){
+    font-size: 18px;
+    color: #603813;
+}
+#archive .archive-inner .archive-ttl a:nth-of-type(2){
+    font-size: 10px;
+    color: gray;
+}
+
+#news .news-numbar {
+    text-align: center;
+    line-height: 50px;
+}
+
+.page-numbers {
+    color: #FF7497;
+    border: 1px solid #FF7497;
+    padding: 0 8px;
+    border-radius: 100%;
+    transition: all.3s;
+}
+
+.page-numbers:hover {
+    background-color: #FF7497;
+    color: white;
+
+}
+
+.current {
+    background-color: #FF7497;
+    color: white;
+    padding: 0 8px;
+    border-radius: 100%;
+}
+
+.prev {
+    border: 0;
+}
+.next {
+    border: 0;
+}
+
+.sidebar .widgettitle {
+    font-size: 12px;
+    line-height: 32px;
+}
+
+.sidebar a {
+    color: black;
+    display: block;
+    font-size: 12px;
+    line-height: 32px;
+    background-color: whitesmoke;
+    border-bottom: 3px solid white;
+    transition: all.3s;
+}
+
+#archives-dropdown-4 {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+}
