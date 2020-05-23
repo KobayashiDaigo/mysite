@@ -19,7 +19,7 @@
     <meta property="og:local" content="ja_JP" />
     
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css" type="text/css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sab.css" type="text/css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <title>こどもしぜんじゅく</title>
@@ -32,7 +32,7 @@
 
     <header>
         <div class="wrap">
-            <a class="logo" href="#">
+            <a class="logo" href="<?php echo home_url('/'); ?>">
                 <img src="<?php bloginfo('template_directory'); ?>/images/logo1.png" alt="こどもしぜんじゅくのロゴ">
             </a>
             <div>
