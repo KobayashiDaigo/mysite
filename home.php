@@ -9,12 +9,12 @@
             <div class="ask">こんなお悩みありませんか？</div>
             <div>
                 <ul>
-                    <li><i class="far fa-check-square fa-fw my-size my-yellow"></i>  こどもが家でゲームしてばかり</li>
-                    <li><i class="far fa-check-square fa-fw my-size my-yellow"></i> こどもが運動が苦手</li>
-                    <li><i class="far fa-check-square fa-fw my-size my-yellow"></i> なかなか自然に触れる機会がない</li>
-                    <li><i class="far fa-check-square fa-fw my-size my-yellow"></i> おもちゃを買いなおすのが負担になる</li>
-                    <li><i class="far fa-check-square fa-fw my-size my-yellow"></i> こどもが風邪をひきやすい</li>
-                    <li><i class="far fa-check-square fa-fw my-size my-yellow"></i> 新しいおともだちができない</li>
+                    <li class="fadein"><i class="far fa-check-square fa-fw my-size my-yellow"></i>  こどもが家でゲームしてばかり</li>
+                    <li class="fadein"><i class="far fa-check-square fa-fw my-size my-yellow"></i> こどもが運動が苦手</li>
+                    <li class="fadein"><i class="far fa-check-square fa-fw my-size my-yellow"></i> なかなか自然に触れる機会がない</li>
+                    <li class="fadein"><i class="far fa-check-square fa-fw my-size my-yellow"></i> おもちゃを買いなおすのが負担になる</li>
+                    <li class="fadein"><i class="far fa-check-square fa-fw my-size my-yellow"></i> こどもが風邪をひきやすい</li>
+                    <li class="fadein"><i class="far fa-check-square fa-fw my-size my-yellow"></i> 新しいおともだちができない</li>
                 </ul>
             </div>
         </div>
@@ -24,7 +24,7 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/background1.png" alt="緑のつなぎ部分">
     </div>
 
-    <div class="ask">こどもしぜんじゅくでは保護者様の<br>
+    <div class="ask fadeup">こどもしぜんじゅくでは保護者様の<br>
         <span class="marker-yellow">お悩みを解決いたします！</span>
     </div>
     
@@ -33,11 +33,11 @@
     </div>
     
     <div class="comparison">
-        <div class="ask"><span class="color-green">こどもしぜんじゅく</span>って<br>
+        <div class="ask fadein"><span class="color-green">こどもしぜんじゅく</span>って<br>
             普通の塾とどう違うの？
         </div>
 
-        <table>
+        <table class="fadeup">
             <tr>
                 <th></th>
                 <th class="popular"><span class="inner">こどもしぜんじゅく</span></th>
@@ -70,13 +70,13 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/background5.png" alt="黄色のつなぎ部分">
     </div>
 
-    <div class="ask" id="feature">ひと味違う<br>
+    <div class="ask fadein" id="feature">ひと味違う<br>
         <span class="marker-yellow"><span class="color-green">3つの特徴</span></span>
     </div>
 
     <div class="feature">
         <div class="wrap">
-            <div class="inner">
+            <div class="inner fadein-r">
                 <div>
                     <img class="numbar" src="<?php bloginfo('template_directory'); ?>/images/numbar1.png" alt="">
                     <h1><span class="initial">実</span>体験がメイン</h1>
@@ -85,7 +85,7 @@
                 <img src="<?php bloginfo('template_directory'); ?>/images/feature1.png" alt="">
             </div>
 
-            <div class="inner">
+            <div class="inner fadein-l">
                 <div>
                     <img class="numbar" src="<?php bloginfo('template_directory'); ?>/images/numbar2.png" alt="">
                     <h1><span class="initial">安</span>全な森を所有</h1>
@@ -94,7 +94,7 @@
                 <img src="<?php bloginfo('template_directory'); ?>/images/feature2.png" alt="">
             </div>
 
-            <div class="inner">
+            <div class="inner fadein-r">
                 <div>
                     <img class="numbar" src="<?php bloginfo('template_directory'); ?>/images/numbar3.png" alt="">
                     <h1><span class="initial">色</span>んないつの間にかがある</h1>
@@ -109,11 +109,11 @@
 
     <div id="day">
         <div class="day day1">
-            <div class="ask">こどもしぜんじゅくの<br>
+            <div class="ask fadein">こどもしぜんじゅくの<br>
                 <span class="marker-yellow"><span class="color-green">1日のながれ</span></span>
             </div>
     
-            <div class="wrap">
+            <div class="wrap fadein-r">
                 <div>午前の部/午後の部</div>
                 <img class="time" src="<?php bloginfo('template_directory'); ?>/images/time1.png" alt="">
                 <img src="<?php bloginfo('template_directory'); ?>/images/day1.png" alt="">
@@ -128,7 +128,7 @@
         </div>
 
         <div class="day day2">
-            <div class="wrap">
+            <div class="wrap fadein-l">
                 <img class="time" src="<?php bloginfo('template_directory'); ?>/images/time2.png" alt="">
                 <img src="<?php bloginfo('template_directory'); ?>/images/day2.png" alt="">
                 <h1>説明</h1>
@@ -142,7 +142,7 @@
         </div>
 
         <div class="day day3">
-            <div class="wrap">
+            <div class="wrap fadein-r">
                 <img class="time" src="<?php bloginfo('template_directory'); ?>/images/time3.png" alt="">
                 <img src="<?php bloginfo('template_directory'); ?>/images/day3.png" alt="">
                 <h1>探検スタート！</h1>
@@ -156,7 +156,7 @@
         </div>
 
         <div class="day day4">
-            <div class="wrap">
+            <div class="wrap fadein-l">
                 <img class="time" src="<?php bloginfo('template_directory'); ?>/images/time4.png" alt="">
                 <img src="<?php bloginfo('template_directory'); ?>/images/day4.png" alt="">
                 <h1>発表</h1>
@@ -167,7 +167,7 @@
         </div>
     </div>
 
-    <div class="reminder">
+    <div class="reminder fadeup">
         <p>こどもの成長を加速させたいなら、</p>
         <p>こどもしぜんじゅく</p>
         <p>現在、無料体験実施中！！</p>
@@ -175,11 +175,11 @@
         <div class="free-application"><a href="#form">無料体験申し込み</a></div>
     </div>
 
-    <div class="ask">選べる<br>
+    <div class="ask fadein">選べる<br>
         <span class="marker-yellow"><span class="color-green">料金体系</span></span>
     </div>
 
-    <div class="price" id="price">
+    <div class="price fadeup" id="price">
         <div class="wrap">
             <ul class="plan">
                 <li class="flat"><span class="active">定額プラン</span></li>
@@ -208,7 +208,7 @@
         </div>
     </div>
 
-    <div class="reminder">
+    <div class="reminder fadeup">
         <p>こどもの成長を加速させたいなら、</p>
         <p>こどもしぜんじゅく</p>
         <p>現在、無料体験実施中！！</p>
@@ -216,11 +216,11 @@
         <div class="free-application"><a href="#form">無料体験申し込み</a></div>
     </div>
 
-    <div class="ask">先日テレビ番組<br>
+    <div class="ask fadein">先日テレビ番組<br>
         「<span class="marker-yellow"><span class="color-green">がっちりマンデー</span></span>」で紹介されました！
     </div>
 
-    <div id="media">
+    <div class="fadein" id="media">
         <div class="iframe">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ITCmMn_avhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -228,10 +228,10 @@
     </div>
 
     <div class="thank">
-        <p>おかげさまで</p>
-        <p><span class="marker-yellow">累計ご利用者人数</span></p>
-        <p>2,000名突破！！</p>
-        <p>ご利用者様より多くの喜びの声が届いております</p>
+        <p class="fadein">おかげさまで</p>
+        <p class="fadein"><span class="marker-yellow">累計ご利用者人数</span></p>
+        <p class="fadeup">2,000名突破！！</p>
+        <p class="fadein">ご利用者様より多くの喜びの声が届いております</p>
     </div>
 
     <div class="nospace">
@@ -239,9 +239,9 @@
     </div>
 
     <div id="voice">
-        <div>ご利用者様の声</div>
+        <div class="fadein">ご利用者様の声</div>
         <div class="wrap">
-            <div class="inner">
+            <div class="inner fadein">
                 <div>子どもの<span class="marker-red">好奇心</span>が増しました！</div>
                 <img src="<?php bloginfo('template_directory'); ?>/images/voice1.png" alt="ご利用者さまの写真">
                 <p>まつした　あゆみちゃん(2才)</p>
@@ -253,7 +253,7 @@
                 また今では、こどもしぜんじゅくでできたおともだちと遊ぶ時間も増えゲームをやる時間が減りました。</p>
             </div>
 
-            <div class="inner">
+            <div class="inner fadein">
                 <div>子どもの<span class="marker-red">行動力</span>が上がりました！</div>
                 <img src="<?php bloginfo('template_directory'); ?>/images/voice2.png" alt="ご利用者さまの写真">
                 <p>たかはし　ともやくん(3才)</p>
@@ -266,15 +266,15 @@
         </div>
     </div>
 
-    <div class="reminder">
+    <div class="reminder fadeup">
         <p>こどもの成長を加速させたいなら、</p>
         <p>こどもしぜんじゅく</p>
         <p>現在、無料体験実施中！！</p>
         <p>ぜひ一度体験してみてください</p>
-        <div class="free-application"><a href="#">無料体験申し込み</a></div>
+        <div class="free-application"><a href="#form">無料体験申し込み</a></div>
     </div>
     
-    <div class="ask">
+    <div class="ask fadein">
         <p>こどもしぜんじゅく在籍中のスタッフは</p>
         <p>それぞれの得意なことに応じて</p>
         <p>探検の中に<span class="marker-yellow">独自カリキュラム</span>として組み込んでおります</p>
@@ -282,12 +282,12 @@
 
     <div id="staff">
         <div class="wrap">
-            <div>-探検スタッフ-</div>
-            <div class="inner inner-green">
+            <div class="fadein">-探検スタッフ-</div>
+            <div class="inner inner-green fadein-r">
                 <div class="inner-text">
                     <img src="<?php bloginfo('template_directory'); ?>/images/staff1.png" alt="スタッフの写真">
                     <ul>
-                        <li>むーちゃん隊員 <a href="#" class="insta_btn"><span class="insta"><i class="fab fa-instagram"></i></span> check!</a></li></li>
+                        <li>むーちゃん隊員 <a href="https://www.instagram.com/?hl=ja" class="insta_btn"><span class="insta"><i class="fab fa-instagram"></i></span> check!</a></li></li>
                         <li>得意教科:<span class="marker-yellow">音楽</span></li>
                         <li>得意スポーツ:バレーボール</li>
                         <li>好きな食べもの:やきにく</li>
@@ -296,11 +296,11 @@
                 </div>
                 <p>はじめまして、むらたあかりこと、むーちゃんです。隊員歴は現在2年になりました。私は探検をする中で、子どもたちの自主性というものを尊重することを意識しております。子どもたちの可能性は無限大です。私も気づかなかったことに気づいたり、新発見をしてくれることが多くあります。</p>
             </div>
-            <div class="inner inner-blue">
+            <div class="inner inner-blue fadein-l">
                 <div class="inner-text">
                     <img src="<?php bloginfo('template_directory'); ?>/images/staff2.png" alt="スタッフの写真">
                     <ul>
-                        <li>まりこ隊員 <a href="#" class="insta_btn"><span class="insta"><i class="fab fa-instagram"></i></span> check!</a></li>
+                        <li>まりこ隊員 <a href="https://www.instagram.com/?hl=ja" class="insta_btn"><span class="insta"><i class="fab fa-instagram"></i></span> check!</a></li>
                         <li>得意教科:<span class="marker-yellow">英語</span></li>
                         <li>得意スポーツ:弓道</li>
                         <li>好きな食べもの:ドーナツ</li>
@@ -312,16 +312,16 @@
         </div>
     </div>
 
-    <div class="ask">
-        <p>その他、10名のスタッフが在籍しております。</p>
-        <p>各スタッフごとに<span class="marker-yellow">全く異なる探検</span>を用意しております</p>
+    <div class="ask fadein">
+        <p class="fadein">その他、10名のスタッフが在籍しております。</p>
+        <p class="fadein">各スタッフごとに<span class="marker-yellow">全く異なる探検</span>を用意しております</p>
         <br>
-        <p>また季節によってもカリキュラムの内容を変えております。</p>
-        <p><span class="marker-yellow">毎回新しい発見、楽しさ</span>を味わえるようになっております。</p>
+        <p class="fadein">また季節によってもカリキュラムの内容を変えております。</p>
+        <p class="fadein"><span class="marker-yellow">毎回新しい発見、楽しさ</span>を味わえるようになっております。</p>
         <br>
-        <p>少しでも気になっているのであれば</p>
-        <p>無料体験でぜひご参加ください</p>
-        <div class="free-application"><a href="#form">無料体験申し込み</a></div>
+        <p class="fadein">少しでも気になっているのであれば</p>
+        <p class="fadein">無料体験でぜひご参加ください</p>
+        <div class="free-application fadeup"><a href="#form">無料体験申し込み</a></div>
     </div>
 
     <div class="nospace">
@@ -331,24 +331,51 @@
     <div id="question">
         <div class="wrap">
             <div>よくあるご質問</div>
-            <ul>
+            <ul class="fadein">
                 <li class="question"><span class="question-initial">Q</span>何歳から利用できますか？</li>
                 <li class="answer"><span class="answer-initial">A</span>1才からご利用可能です。ただし、小学生以下につきましては、保護者様の同伴が必要となります。</li>
             </ul>
-            <ul>
+            <ul class="fadein">
                 <li class="question"><span class="question-initial">Q</span>予約は当日でもできますか？</li>
                 <li class="answer"><span class="answer-initial">A</span>当日の予約も可能です。ですが午前の部に関しましては、前日に空きがあるか確認していただく必要があります。</li>
             </ul>
-            <ul>
+            <ul class="fadein">
                 <li class="question"><span class="question-initial">Q</span>送迎は頼めますか？</li>
                 <li class="answer"><span class="answer-initial">A</span>弊社では送迎のサービスは行なっておりません。</li>
             </ul>
-            <ul>
+            <ul class="fadein">
                 <li class="question"><span class="question-initial">Q</span>デビットカードは利用できますか？</li>
                 <li class="answer"><span class="answer-initial">A</span>デビットカードのご利用はできません。クレジットカードか、銀行振込でお願い致します。</li>
             </ul>
         </div>
     </div>
+    
+    <div class="article">
+        <div class="wrap">
+        <p>お知らせ</p>
+            <?php 
+            if(have_posts()):
+                while(have_posts()):the_post();
+            ?>
+            <div class="article-text">
+                <a href="<?php echo get_permalink(); ?>">
+                    <?php the_time('Y.n.j'); ?>&nbsp;&nbsp;
+                </a>
+                <a href="<?php echo get_permalink(); ?>">
+                    <?php the_category(', ') ?>&nbsp;&nbsp;
+                </a>
+                <a href="<?php echo get_permalink(); ?>">
+                    <?php the_title(); ?>&nbsp;&nbsp;
+                </a>
+            </div>
+            <?php 
+            endwhile;
+            endif;
+            ?>
+        <a class="more" href="<?php echo home_url('/news'); ?>">もっと見る</a>
+        </div>
+    </div>
+
 </main>
 
 <?php get_footer(); ?>
